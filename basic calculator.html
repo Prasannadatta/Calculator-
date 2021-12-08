@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script>
+
+            // let input1; 
+            // let input2;  
+            function add(input1,input2)
+            {        
+                input1 = document.getElementById('input1').value ;
+                input2 = document.getElementById('input2').value ;      
+               // document.getElementById('add').addEventListener(click,()=>Number(input1) + Number(input2));      
+                document.getElementById('output').innerHTML= Number(input1) + Number(input2); 
+            }
+            
+            function sub(input1,input2)
+            {
+                input1 = document.getElementById('input1').value ;
+                input2 = document.getElementById('input2').value ; 
+                document.getElementById('output').innerHTML=Number(input1) - Number(input2) ;
+            }
+
+            function mul(input1,input2)
+            {
+                input1 = document.getElementById('input1').value ;
+                input2 = document.getElementById('input2').value ; 
+                document.getElementById('output').innerHTML=Number(input1) * Number(input2) ;
+            }
+
+            function div(input1,input2)
+            {
+                input1 = document.getElementById('input1').value ;
+                input2 = document.getElementById('input2').value ; 
+                document.getElementById('output').innerHTML=Number(input1) / Number(input2) ;
+            }
+
+
+            // let sub= document.getElementById('sub').addEventListener(click,()=>+input1 - +input2);
+            //    let mul= document.getElementById('mul').addEventListener(click,()=>+input1 * +input2);
+            //    let div= document.getElementById('div').addEventListener(click,()=>+input1 / +input2);
+        </script>
+    </head>
+    <body>
+        <form >
+            NO. 1<input id='input1' type='number'>
+            <br>
+            <br>
+            NO. 2<input id='input2' type='number'>
+        </form>
+        <button  onclick='add()' id='add' type='submit'> ADD </button>
+        <button  onclick='sub()' id='sub'> SUB </button>
+        <button  onclick='mul()' id='mul'> MUL </button>
+        <button  onclick='div()' id='div'> DIV </button>
+        <br> 
+        ANSWER=>
+        <div id='output'></div>
+    </body>
+</html>
